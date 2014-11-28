@@ -13,7 +13,6 @@ var app = {
     if (this.currentView){
       this.currentView.stopListening();
     };
-
     
     this.currentView = view.render();
   }

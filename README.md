@@ -6,6 +6,7 @@ This is a starter template project for cordova apps, tailored for people startin
 # Setting up
 
 - Install cordova globally if you haven't done it yet: ``npm install -g cordova-cli`.
+- Install bower globally if you haven't done it yet: ``npm install -g bower`.
 - Install the mobile SDKs (XCode, Android SDK, etc).
 - clone this repository
 - Install required node tools: ``npm install``
@@ -24,7 +25,7 @@ This is a starter template project for cordova apps, tailored for people startin
 
 # Building cordova app
 
-Once you built your project you have to perform the cordova built, which was not included as gulp tasks propositally. Just run the usual ``cordova build`` command.
+Once you build your project you have to perform the cordova build, which was not included as gulp tasks on purpose. Just run the usual ``cordova build`` command.
 
 # Development guidelines
 
