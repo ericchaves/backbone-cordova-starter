@@ -1,0 +1,17 @@
+{
+  "name": "CordovaApp",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "app/vendors",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "latest",
+    "backbone": "latest",
+    "underscore": "latest"
+  }
+}

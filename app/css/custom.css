@@ -1,0 +1,15 @@
+/*
+	A simple custom CSS file
+*/
+
+x-tag {
+	background-color:#000000;
+	color: red;
+	display: block;
+}
+
+.x-class {
+	background-color: red;
+	color: white;
+	display: block;
+}

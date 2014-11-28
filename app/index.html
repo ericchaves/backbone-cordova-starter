@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!-- build:css css/style.css -->
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/custom.css" />
+        <!-- endbuild -->
+        <title>Hello World</title>
+    </head>
+    <body>
+        <div id="app" class="app">
+            <h1>Apache Cordova</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <!-- build:vendors js/vendors.js -->
+        <script type="text/javascript" src="vendors/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="vendors/underscore/underscore.js"></script>
+        <script type="text/javascript" src="vendors/backbone/backbone.js"></script>
+        <!-- endbuild -->
+        <!-- build:js js/app.js -->
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/models/user.js"></script>
+        <script type="text/javascript" src="js/views/main.js"></script>
+        <script type="text/javascript" src="js/views/login.js"></script>
+        <!-- endbuild -->
+        <script type="text/x-template" id="x-main">
+            <div class="app">
+                <h1>Apache Cordova</h1>
+                <div id="deviceready" class="blink">
+                    <p class="event listening">Device is Ready</p>
+                </div>
+                <h2 id="start">click me to start</h2>
+            </div>
+        </script>
+        <script type="text/x-template" id="x-login">
+            <div class="app">
+             <% if (!attempts || attempts == 0) { %>
+                <h1>Please logon</h1>
+             <% }else if(attempts && attempts < 3){ %>
+                <h1>Please try again:</h1>
+             <% }else{ %>
+                <h1>Are you kidding me??</h1>
+             <% } %>
+                
+                <form id="login_form">
+                    <p><input id="username" type="text" name="username" value="" placeholder="Username or Email"></p>
+                    <p><input id="password" type="password" name="password" value="" placeholder="Password"></p>
+                    <input type="button" id="btnLogin" name="commit" value="Enter">
+                </form>
+            </div>
+        </script>
+        <script type="text/x-template" id="x-home">
+            <div class="app">
+                <h1>Welcome <%= username %></h1>
+                <div id="deviceready" class="blink">
+                    <p class="event listening">We are live!!</p>
+                </div>
+            </div>
+        </script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            app.initialize();
+        });
+        </script>
+    </body>
+
+</html>
