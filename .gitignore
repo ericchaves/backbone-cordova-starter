@@ -1,5 +1,6 @@
 app/vendors/*
 www/*
+!www/.gitkeep
 
 # Node
 npm-debug.log
