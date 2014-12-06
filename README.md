@@ -10,10 +10,10 @@ This is a starter template project for cordova apps, tailored for people startin
 - Install the mobile SDKs (XCode, Android SDK, etc).
 - clone this repository
 - Install required node tools: ``npm install``
-- Install bower components: ``bower install`
+- Install bower components: ``bower install``
 - Update your cordova config.xml to reflect your project id, reverse name, common name and other info.
-- Add your target platforms: ``cordova platform add ios android``
-- Add your cordova plugins: ``cordova plugin add plugin_name``
+- Add your target platforms: ``cordova platform add ios android ...``
+- Add your cordova plugins: ``cordova plugin add plugin_name ...``
 
 # Running tasks
 
